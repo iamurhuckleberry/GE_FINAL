@@ -13,6 +13,10 @@ public class Player : MonoBehaviour
     [SerializeField] public int playerApDamage;
     HpBar hp;
 
+    [SerializeField] int currentExp;
+    [SerializeField] int expToLevel = 5;
+    [SerializeField] int currentLevel = 1;
+
     private void Awake()
     {
         hp = GetComponent<HpBar>();
@@ -60,5 +64,21 @@ public class Player : MonoBehaviour
         {
             hp.playerHP--;
         }
+    }
+
+    public void AddExp()
+    {
+        currentExp++;
+        if(currentExp == expToLevel)
+        {
+            Levelup();
+            expToLevel += currentLevel * 4;
+            currentExp++;
+        }
+    }
+
+    private void Levelup()
+    {
+        currentLevel++;
     }
 }

@@ -13,7 +13,9 @@ public class EnemyController : MonoBehaviour
     [SerializeField] GameObject coinPrefab;
     [SerializeField] GameObject dimondPrefab;
     [SerializeField] GameObject heal1Prefab;
-    [SerializeField] GameObject heal2Prefab;
+    [SerializeField] GameObject healHalfPrefab;
+
+    private float dropRate;
 
     public bool isTrackingPlayer = true;
     GameObject player;
@@ -60,6 +62,28 @@ public class EnemyController : MonoBehaviour
             Player player = collision.GetComponent<Player>();
             player.ReceiveDamage();
             Debug.Log("Hit");
+        }
+    }
+
+    internal void Drop()
+    {
+        Instantiate(coinPrefab, transform.position, Quaternion.identity);
+        dropRate = UnityEngine.Random.Range(0, 1f);
+
+        if (dropRate < 0.5)
+        {
+            Instantiate(dimondPrefab, new Vector3(transform.position.x + 1, transform.position.y, transform.position.z), Quaternion.identity);
+        }
+        else
+        {
+            if (this.CompareTag("EnemyT1"))
+            {
+                Instantiate(heal1Prefab, new Vector3(transform.position.x + 1, transform.position.y, transform.position.z), Quaternion.identity);
+            }
+            else if (this.CompareTag("EnemyT2"))
+            {
+                Instantiate(healHalfPrefab, new Vector3(transform.position.x + 1, transform.position.y, transform.position.z), Quaternion.identity);
+            }
         }
     }
 
