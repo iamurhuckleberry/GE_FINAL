@@ -6,6 +6,7 @@ public class Player : MonoBehaviour
 {
     [SerializeField] Animator animator;
     [SerializeField] BaseWeapon[] weapons;
+    [SerializeField] GameObject DeathUI;
     
     [SerializeField] public int playerSpeed = 1;
     [SerializeField] public int playerAdDamage;
@@ -50,9 +51,10 @@ public class Player : MonoBehaviour
 
     public void ReceiveDamage()
     {       
-        if(hp.playerHP < 0)
+        if(hp.playerHP <= 0)
         {
             //Destroy(gameObject);
+            DeathUI.SetActive(true);
         }
         else
         {
