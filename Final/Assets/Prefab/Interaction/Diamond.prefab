@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8793098021010537041}
   - component: {fileID: 275741469869538529}
   - component: {fileID: 2976073308451373805}
+  - component: {fileID: 655990629800344277}
   m_Layer: 0
   m_Name: Diamond
   m_TagString: Untagged
@@ -133,3 +134,15 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &655990629800344277
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1708100544868401198}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 513d8eb8cbc51d6459b2b3e357d18f3b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

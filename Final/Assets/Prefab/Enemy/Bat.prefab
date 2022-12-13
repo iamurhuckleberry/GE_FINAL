@@ -84,7 +84,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 596c4e7389db33c4ca8a947cfc88665f, type: 3}
+  m_Sprite: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -92,7 +92,7 @@ SpriteRenderer:
   m_Size: {x: 0.5, y: 0.5}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!222 &3251449354300308739
@@ -216,4 +216,8 @@ MonoBehaviour:
   enemyHP: 0
   enemyMaxHP: 3
   damage: 1
+  coinPrefab: {fileID: 5164973998572779636, guid: c11d84e20f82bca4ba71e16f7e45ec23, type: 3}
+  dimondPrefab: {fileID: 1708100544868401198, guid: 21a55e72f8d09c1489a72c0f125e7adb, type: 3}
+  heal1Prefab: {fileID: 13360193782439032, guid: 0ebd3a3b1cbf6df4f94f3e03a35e575f, type: 3}
+  heal2Prefab: {fileID: 5414600534000183497, guid: 9ebcea863f489ca43a6b9241e5beac18, type: 3}
   isTrackingPlayer: 1

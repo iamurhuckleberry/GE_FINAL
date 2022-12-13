@@ -6,17 +6,16 @@ using TMPro;
 
 public class ExpBar : MonoBehaviour
 {
-    
-    void Start()
+    [SerializeField] Player player;
+    [SerializeField] Image foreground;
+    [SerializeField] TMP_Text LevelText;
+
+    private void Update()
     {
-        
+        LevelText.text = "" + player.currentLevel;
+        float expRatio = (float)player.currentExp / player.expToLevel;
+        foreground.transform.localScale = new Vector3(expRatio, 1, 1);
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
-    
 }

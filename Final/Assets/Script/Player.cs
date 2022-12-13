@@ -13,9 +13,9 @@ public class Player : MonoBehaviour
     [SerializeField] public int playerApDamage;
     HpBar hp;
 
-    [SerializeField] int currentExp;
-    [SerializeField] int expToLevel = 5;
-    [SerializeField] int currentLevel = 1;
+    [SerializeField] internal int currentExp;
+    [SerializeField] internal int expToLevel = 5;
+    [SerializeField] internal int currentLevel = 1;
 
     private void Awake()
     {
@@ -66,19 +66,29 @@ public class Player : MonoBehaviour
         }
     }
 
-    public void AddExp()
+    internal void AddEXP()
     {
-        currentExp++;
-        if(currentExp == expToLevel)
+        if (++currentExp >= expToLevel)
         {
-            Levelup();
-            expToLevel += currentLevel * 4;
-            currentExp++;
+            currentExp = 0;
+            expToLevel += 10;
+            currentLevel++;
+
+            int randomIndex = UnityEngine.Random.Range(0, weapons.Length);
+            weapons[randomIndex].LevelUp();
         }
     }
 
-    private void Levelup()
+
+    public void Add1Heart()
     {
-        currentLevel++;
+        hp.playerHP += 1;
+        hp.playerHP = hp.playerMaxHP;
+    }
+
+    public void Add2Heart()
+    {
+        hp.playerHP += 2;
+        hp.playerHP = hp.playerMaxHP;
     }
 }
