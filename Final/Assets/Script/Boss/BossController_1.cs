@@ -73,7 +73,7 @@ public class BossController_1 : MonoBehaviour
             {
                 scaleX = -1;
             }
-            transform.localScale = new Vector3(scaleX * 4, 4, 4);
+            transform.localScale = new Vector3(scaleX * 1, 1, 1);
         }
     }
 }

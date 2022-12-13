@@ -73,9 +73,6 @@ public class Player : MonoBehaviour
             currentExp = 0;
             expToLevel += 10;
             currentLevel++;
-
-            int randomIndex = UnityEngine.Random.Range(0, weapons.Length);
-            weapons[randomIndex].LevelUp();
         }
     }
 
