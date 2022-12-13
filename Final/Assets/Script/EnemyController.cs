@@ -10,6 +10,11 @@ public class EnemyController : MonoBehaviour
     [SerializeField] int enemyMaxHP = 3;
     public int damage = 1;
 
+    [SerializeField] GameObject coinPrefab;
+    [SerializeField] GameObject dimondPrefab;
+    [SerializeField] GameObject heal1Prefab;
+    [SerializeField] GameObject heal2Prefab;
+
     public bool isTrackingPlayer = true;
     GameObject player;
 
