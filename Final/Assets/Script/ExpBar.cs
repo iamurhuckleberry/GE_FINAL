@@ -6,7 +6,7 @@ using TMPro;
 
 public class ExpBar : MonoBehaviour
 {
-    [SerializeField] Player player;
+    [SerializeField] public Player player;
     [SerializeField] Image foreground;
     [SerializeField] TMP_Text LevelText;
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerCamera : MonoBehaviour
 {
-    [SerializeField] GameObject player;
+    [SerializeField] public GameObject player;
 
     private void Update()
     {
