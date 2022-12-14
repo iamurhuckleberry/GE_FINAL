@@ -4678,6 +4678,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1316316022373063748}
+  - component: {fileID: 398500064}
   m_Layer: 5
   m_Name: ExpBar
   m_TagString: Untagged
@@ -4708,6 +4709,21 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &398500064
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1316316022373063751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 606c9ce2ec04eee439f18d271308ce7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  foreground: {fileID: 1316316022586443563}
+  LevelText: {fileID: 1316316021552015591}
 --- !u!1 &1316316022413066078
 GameObject:
   m_ObjectHideFlags: 0
@@ -5353,7 +5369,7 @@ MonoBehaviour:
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 0
-  m_FillAmount: 0.738
+  m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_UseSpriteMesh: 0

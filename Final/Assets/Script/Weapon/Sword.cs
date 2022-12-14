@@ -10,7 +10,7 @@ public class Sword : BaseWeapon
     {
         if(collision.tag == "Enemy")
         {
-            Destroy(collision.gameObject);
+            collision.GetComponent<EnemyController>().TakeDamage(1);
         }
         else if(collision.tag == "Boss")
         {

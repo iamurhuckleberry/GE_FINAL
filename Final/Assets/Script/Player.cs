@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     [SerializeField] internal int expToLevel = 5;
     [SerializeField] internal int currentLevel = 1;
 
+    [SerializeField] internal int currentCoin;
+
     private void Awake()
     {
         hp = GetComponent<HpBar>();
@@ -60,6 +62,7 @@ public class Player : MonoBehaviour
         {
             //Destroy(gameObject);
             DeathUI.SetActive(true);
+            Time.timeScale = 0f;
         }
         else
         {
@@ -92,5 +95,12 @@ public class Player : MonoBehaviour
     {
         hp.playerHP += 2;
         hp.playerHP = hp.playerMaxHP;
+    }
+
+    public void AddCoin()
+    {
+
+        currentCoin++;
+        
     }
 }

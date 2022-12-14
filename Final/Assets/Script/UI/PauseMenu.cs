@@ -47,6 +47,7 @@ public class PauseMenu : MonoBehaviour
     public void Retry()
     {
         SceneManager.LoadScene("Lv1");
+        Time.timeScale = 1f;
     }
     public void QuitGame()
     {

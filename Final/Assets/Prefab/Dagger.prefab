@@ -131,4 +131,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59309ee3f984dab429cb3b61b848d741, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  polygonCollider2D: {fileID: 4986423450649443584}
+  damge: 2
+  speed: 20
+  rb: {fileID: 0}

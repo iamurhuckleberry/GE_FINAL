@@ -2,6 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 public class EnemyController : MonoBehaviour
 {
@@ -65,12 +66,36 @@ public class EnemyController : MonoBehaviour
         }
     }
 
+    public void TakeDamage(int damge)
+    {
+        enemyHP -= damge;
+
+        if (enemyHP <= 0)
+        {
+            Debug.Log("DIE");
+            Drop();
+        }
+    }
+
+
+
     internal void Drop()
     {
         Instantiate(dimondPrefab, new Vector3(transform.position.x +1, transform.position.y + 1), Quaternion.identity);
         Destroy(gameObject);
-    
-        
+
+        Instantiate(coinPrefab, transform.position, Quaternion.identity);
+        dropRate = Random.Range(0, 1f);
+
+        if (dropRate < 0.5)
+        {
+            Instantiate(coinPrefab, new Vector3(transform.position.x + 1, transform.position.y, transform.position.z), Quaternion.identity);
+        }
+        else
+        {
+             Instantiate(heal1Prefab, new Vector3(transform.position.x + 1, transform.position.y, transform.position.z), Quaternion.identity);
+        }
+
     }
 
 
