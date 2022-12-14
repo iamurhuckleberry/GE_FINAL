@@ -7,6 +7,7 @@ public class MainMenu : MonoBehaviour
 {
     public GameObject optionMenuUI;
     public GameObject characterMenuUI;
+    public GameManager MainCamera;
     public void OnStartButton()
     {
         SceneManager.LoadScene("Lv1");
@@ -30,6 +31,11 @@ public class MainMenu : MonoBehaviour
     public void CharacterBackButton()
     {
         characterMenuUI.SetActive(false);
+    }
+
+    public void PosOff()
+    {
+
     }
 
     public void QuitGame()

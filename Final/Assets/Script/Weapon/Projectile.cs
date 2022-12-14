@@ -4,15 +4,16 @@ using UnityEngine;
 
 public class Projectile : BaseWeapon
 {
-    // Start is called before the first frame update
+    public int damge = 2;
+    public float speed = 20f;
+    public Rigidbody2D rb;
     void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
+        rb.velocity = transform.right * speed;
+    }    // Update is called once per frame
+    private void OnTriggerEnter2D(Collider2D hitInfo)
     {
-        
+
+        Destroy(gameObject);
     }
 }
