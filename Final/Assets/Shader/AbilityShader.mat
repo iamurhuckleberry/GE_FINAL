@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: PlasmaMat
+  m_Name: AbilityShader
   m_Shader: {fileID: -6465566751694194690, guid: a803b561b142e9641933619d2155444b, type: 3}
   m_ValidKeywords: []
   m_InvalidKeywords: []
