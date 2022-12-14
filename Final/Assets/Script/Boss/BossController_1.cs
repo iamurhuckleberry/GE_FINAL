@@ -11,12 +11,14 @@ public class BossController_1 : MonoBehaviour
     }
 
 
+    public Animator BossAnimator;
     [SerializeField] float moveSpeed = 1f;
     [SerializeField] int bossHP;
     [SerializeField] int bossMaxHP = 500;
     public int damage = 1;
     GameObject player;
     public BossState bossState = BossState.normal;
+    
 
     private void Awake()
     {
@@ -41,6 +43,21 @@ public class BossController_1 : MonoBehaviour
             Destroy(this.gameObject);
         }
     }
+
+    public void BossAttack()
+    {
+        Vector3 destination = player.transform.position;
+        Vector3 source = transform.position;
+
+        Vector3 direction = destination - source;
+
+        direction.Normalize();
+        if (destination.x <= 2)
+        {
+            BossAnimator.SetBool("Attack1") = true;
+        }
+    }
+
 
     private void UpdateValue()
     {

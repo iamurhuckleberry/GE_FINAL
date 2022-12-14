@@ -153,12 +153,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemyDatabase:
+  - {fileID: 11400000, guid: d0283f3aa82e09b4c9cd8056347dbcc8, type: 2}
+  - {fileID: 11400000, guid: 23c3ed69cc05f814cbc6cefcf0651113, type: 2}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  enemyPrefab: {fileID: 0}
+  enemyPrefab: {fileID: 5495517520449444891, guid: 9ab66287a36e3e846a2664bcabeaaaad, type: 3}
 --- !u!4 &75470017
 Transform:
   m_ObjectHideFlags: 0
@@ -172,7 +172,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &448360439
 PrefabInstance:
@@ -271,57 +271,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 36cd0b250d19b4d4e9de0f2184758484, type: 3}
---- !u!1 &550201354
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 550201356}
-  - component: {fileID: 550201355}
-  m_Layer: 0
-  m_Name: EnemySpwan
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &550201355
+--- !u!114 &492151063 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 1316316022105193053, guid: 456400f9196c42641b480be0d55657b7, type: 3}
+  m_PrefabInstance: {fileID: 2075389538}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 550201354}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: af9cf696b8d577840ade89856b4c1e27, type: 3}
+  m_Script: {fileID: 11500000, guid: 96d517ea5c7fe8743a38007c62f147b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyDatabase:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  enemyPrefab: {fileID: 0}
---- !u!4 &550201356
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 550201354}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 447.015, y: 270.54947, z: -13.289048}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 6
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &584876613
 GameObject:
   m_ObjectHideFlags: 0
@@ -784,10 +744,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ee48a8e4f602da4a8d4af9b91d46440, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canSpawn: 0
+  canSpawn: 1
   levelTime: 30
   Level1Time: 10
-  TimeCounter: {fileID: 0}
+  TimeCounter: {fileID: 492151063}
 --- !u!4 &1360989394
 Transform:
   m_ObjectHideFlags: 0
@@ -1210,32 +1170,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!1 &2052373732 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3637143220546273683, guid: fe73385df6ffffb46b49de2a3a24e63b, type: 3}
-  m_PrefabInstance: {fileID: 3637143220672933492}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &2052373733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2052373732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27cdb7c25678efa498b7c0295cb9d366, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1
-  enemyHP: 0
-  enemyMaxHP: 0
-  damage: 0
-  coinPrefab: {fileID: 0}
-  dimondPrefab: {fileID: 0}
-  heal1Prefab: {fileID: 0}
-  heal2Prefab: {fileID: 0}
-  isTrackingPlayer: 1
 --- !u!1001 &2075389538
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1514,10 +1448,6 @@ PrefabInstance:
     - target: {fileID: 3637143220546273683, guid: fe73385df6ffffb46b49de2a3a24e63b, type: 3}
       propertyPath: m_Name
       value: Boss
-      objectReference: {fileID: 0}
-    - target: {fileID: 3637143220546273692, guid: fe73385df6ffffb46b49de2a3a24e63b, type: 3}
-      propertyPath: m_IsTrigger
-      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3637143220546273695, guid: fe73385df6ffffb46b49de2a3a24e63b, type: 3}
       propertyPath: m_RootOrder

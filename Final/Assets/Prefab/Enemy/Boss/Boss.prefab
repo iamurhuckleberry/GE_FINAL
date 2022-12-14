@@ -12,8 +12,7 @@ GameObject:
   - component: {fileID: 3637143220546273694}
   - component: {fileID: 3637143220546273693}
   - component: {fileID: 3637143220546273692}
-  - component: {fileID: 5929744555538755657}
-  - component: {fileID: 2052373733}
+  - component: {fileID: 8820196118200735844}
   m_Layer: 0
   m_Name: Boss
   m_TagString: Untagged
@@ -134,7 +133,7 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.90925765, y: 1.75}
   m_EdgeRadius: 0
---- !u!114 &5929744555538755657
+--- !u!114 &8820196118200735844
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -151,24 +150,3 @@ MonoBehaviour:
   bossMaxHP: 500
   damage: 1
   bossState: 0
---- !u!114 &2052373733
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3637143220546273683}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 27cdb7c25678efa498b7c0295cb9d366, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  moveSpeed: 1
-  enemyHP: 0
-  enemyMaxHP: 0
-  damage: 0
-  coinPrefab: {fileID: 0}
-  dimondPrefab: {fileID: 0}
-  heal1Prefab: {fileID: 0}
-  heal2Prefab: {fileID: 0}
-  isTrackingPlayer: 1
