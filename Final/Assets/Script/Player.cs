@@ -17,7 +17,7 @@ public class Player : MonoBehaviour
     [SerializeField] internal int expToLevel = 5;
     [SerializeField] internal int currentLevel = 1;
 
-    [SerializeField] internal int currentCoin;
+    [SerializeField] public int currentCoin;
 
     private void Awake()
     {
