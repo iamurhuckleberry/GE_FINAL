@@ -54,7 +54,7 @@ public class BossController_1 : MonoBehaviour
         direction.Normalize();
         if (destination.x <= 2)
         {
-            BossAnimator.SetBool("Attack1") = true;
+            //BossAnimator.SetBool("Attack1") = true;
         }
     }
 
