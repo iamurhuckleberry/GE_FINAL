@@ -2230,10 +2230,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 4359378204597588809}
   weapons:
-  - {fileID: 5138387536816694767, guid: 6e24f2750b178144599a41bf67af7139, type: 3}
-  - {fileID: 2805481551850589726}
+  - {fileID: 2298601174269854030, guid: 9ef292f17342631498770768187a8c4d, type: 3}
+  - {fileID: 6850925319876029856, guid: 96d8511483efe6e408d7fffb2f70ccd2, type: 3}
   - {fileID: 4163180310837327294, guid: 20deb700bca9f984cabdbb4d2482d759, type: 3}
-  speed: 5
+  DeathUI: {fileID: 0}
+  playerSpeed: 5
+  playerAdDamage: 0
+  playerApDamage: 0
+  currentExp: 0
+  expToLevel: 5
+  currentLevel: 1
 --- !u!50 &4864679619040925728
 Rigidbody2D:
   serializedVersion: 4
@@ -4121,17 +4127,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 2712393796049140448, guid: cc01991f1b8a5d4479081c36184cefd8, type: 3}
   m_PrefabInstance: {fileID: 4082433924123571258}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2805481551850589726 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2182181611881429540, guid: cc01991f1b8a5d4479081c36184cefd8, type: 3}
-  m_PrefabInstance: {fileID: 4082433924123571258}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 68e05cdc024070840b26730d9070de41, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!60 &9049118907331283258 stripped
 PolygonCollider2D:
   m_CorrespondingSourceObject: {fileID: 4986423450649443584, guid: cc01991f1b8a5d4479081c36184cefd8, type: 3}

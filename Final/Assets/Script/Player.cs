@@ -73,6 +73,10 @@ public class Player : MonoBehaviour
             currentExp = 0;
             expToLevel += 10;
             currentLevel++;
+
+            weapons[0].LevelUp();//Sword
+            weapons[1].LevelUp();//Hammer
+            weapons[2].LevelUp();//Dagger
         }
     }
 

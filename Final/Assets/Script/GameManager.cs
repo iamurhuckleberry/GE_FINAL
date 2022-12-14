@@ -7,9 +7,14 @@ public class GameManager : MonoBehaviour
     public static GameManager instance;
     public bool canSpawn;
     public float levelTime = 30f;
+    [SerializeField] GameObject Player1;
+    [SerializeField] GameObject Player2;
+    public static GameObject CurrentPlayer;
 
     private void Awake()
     {
+        CurrentPlayer = Player1;
+
         if (instance != null && instance != this)
         {
             Destroy(this);
@@ -34,4 +39,5 @@ public class GameManager : MonoBehaviour
         //go next level
 
     }
+
 }
