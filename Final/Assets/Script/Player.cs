@@ -20,6 +20,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         hp = GetComponent<HpBar>();
+        
     }
     private void Start()
     {
