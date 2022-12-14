@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: Mushroom
   m_EditorClassIdentifier: 
   enemyName: Mushroom
-  damage: 0
+  damage: 1
   sprite: {fileID: 16180588, guid: c651fd76c1f85054e9254ae9a44cccaf, type: 3}
   animatorController: {fileID: 9100000, guid: 798ee145faa1a374484c7d00b5c04275, type: 2}

@@ -22,6 +22,7 @@ public class Player : MonoBehaviour
     private void Awake()
     {
         hp = GetComponent<HpBar>();
+        DontDestroyOnLoad(this.gameObject);
         
     }
     private void Start()
@@ -88,13 +89,11 @@ public class Player : MonoBehaviour
     public void Add1Heart()
     {
         hp.playerHP += 1;
-        hp.playerHP = hp.playerMaxHP;
     }
 
     public void Add2Heart()
     {
         hp.playerHP += 2;
-        hp.playerHP = hp.playerMaxHP;
     }
 
     public void AddCoin()

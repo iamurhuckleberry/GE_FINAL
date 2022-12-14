@@ -962,6 +962,7 @@ MonoBehaviour:
   currentExp: 0
   expToLevel: 5
   currentLevel: 1
+  currentCoin: 0
 --- !u!114 &8649944884190843656
 MonoBehaviour:
   m_ObjectHideFlags: 0

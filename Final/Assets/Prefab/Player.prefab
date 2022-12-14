@@ -2240,6 +2240,7 @@ MonoBehaviour:
   currentExp: 0
   expToLevel: 5
   currentLevel: 1
+  currentCoin: 0
 --- !u!50 &4864679619040925728
 Rigidbody2D:
   serializedVersion: 4

@@ -7,14 +7,8 @@ public class CoinCounter : MonoBehaviour
 {
     [SerializeField] public Player player;
     [SerializeField] TMP_Text CoinNumber;
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void Update()
     {
-        var player = collision.GetComponent<Player>();
-        if (player)
-        {
-            Debug.Log("Before");
-            CoinNumber.text = "" + player.currentCoin;
-            Debug.Log("After");
-        }
+        CoinNumber.text = "" + player.currentCoin;
     }
 }
